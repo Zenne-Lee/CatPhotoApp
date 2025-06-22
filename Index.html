@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Declares this is an HTML5 document -->
+
+<html lang="en"> <!-- Starts the HTML document with English as the language -->
+  <head>
+    <meta charset="utf-8"> <!-- Sets character encoding to UTF-8 (supports all characters) -->
+
+    <title>CatPhotoApp</title> <!-- Sets the page title in the browser tab -->
+  </head>
+  <body> <!-- Main content of the web page starts here -->
+    <main> <!-- Semantic tag indicating the main content of the page -->
+      <h1>CatPhotoApp</h1> <!-- Top-level heading for the page title -->
+
+      <section> <!-- First content section: Cat Photos -->
+        <h2>Cat Photos</h2> <!-- Subheading for cat photos -->
+        <p>Everyone loves
+          <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">
+            cute cats
+          </a> online!
+        </p> <!-- Paragraph with a link to a cat photo -->
+
+        <p>
+          See more
+          <a target="_blank" href="https://freecatphotoapp.com">
+            cat photos
+          </a> in our gallery.
+        </p> <!-- Another paragraph with a link that opens in a new tab -->
+
+        <a href="https://freecatphotoapp.com">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+               alt="A cute orange cat lying on its back.">
+        </a> <!-- Clickable cat image that links to the cat photo site -->
+      </section>
+
+      <section> <!-- Second section: Cat Lists -->
+        <h2>Cat Lists</h2> <!-- Heading for the lists section -->
+
+        <h3>Things cats love:</h3> <!-- Subheading for unordered list -->
+        <ul> <!-- Unordered list of things cats love -->
+          <li>catnip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+
+        <figure> <!-- Groups image and caption -->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+               alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption> <!-- Caption with emphasized word -->
+        </figure>
+
+        <h3>Top 3 things cats hate:</h3> <!-- Subheading for ordered list -->
+        <ol> <!-- Ordered list of things cats hate -->
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+
+        <figure> <!-- Second figure with image and caption -->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+               alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption> <!-- Caption with strong emphasis -->
+        </figure>
+      </section>
+
+      <section> <!-- Third section: Cat Form -->
+        <h2>Cat Form</h2> <!-- Heading for the form section -->
+
+        <form action="https://freecatphotoapp.com/submit-cat-photo"> <!-- Form sends data to this URL -->
+          <fieldset> <!-- Groups related radio buttons -->
+            <legend>Is your cat an indoor or outdoor cat?</legend> <!-- Description for the fieldset -->
+
+            <label>
+              <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>
+              Indoor
+            </label> <!-- Radio button for Indoor -->
+
+            <label>
+              <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
+              Outdoor
+            </label> <!-- Radio button for Outdoor -->
+          </fieldset>
+
+          <fieldset> <!-- Second fieldset for checkboxes -->
+            <legend>What's your cat's personality?</legend>
+
+            <input id="loving" type="checkbox" name="personality" value="loving" checked>
+            <label for="loving">Loving</label> <!-- Checkbox for Loving -->
+
+            <input id="lazy" type="checkbox" name="personality" value="lazy">
+            <label for="lazy">Lazy</label> <!-- Checkbox for Lazy -->
+
+            <input id="energetic" type="checkbox" name="personality" value="energetic">
+            <label for="energetic">Energetic</label> <!-- Checkbox for Energetic -->
+          </fieldset>
+
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <!-- Text input for cat photo URL, required field -->
+
+          <button type="submit">Submit</button> <!-- Submit button for the form -->
+        </form>
+      </section>
+    </main>
+
+    <footer> <!-- Footer of the page -->
+      <p>
+        No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        <!-- Link to FreeCodeCamp -->
+      </p>
+    </footer>
+  </body>
+</html>
