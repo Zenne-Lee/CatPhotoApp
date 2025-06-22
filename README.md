@@ -2,7 +2,7 @@
 A beginner HTML project that showcases the use of basic semantic HTML elements, images, links, lists, and forms.This project contains solutions to exercises from the freeCodeCamp.org curriculum. All credits for the original challenges and learning materials go to freeCodeCamp.org. Solutions written by me.
 
 Features:
-Uses semantic HTML5 structure (<main>, <section>, <figure>, <footer>)
+Uses semantic HTML5 structure
 
 Includes links and images related to cats 
 
